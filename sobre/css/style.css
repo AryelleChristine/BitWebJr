@@ -1,0 +1,276 @@
+.titulo {
+  display: flex;
+  align-items: center;
+  background-color: #13704b;
+  height: 100px;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.titulo h1 {
+  color: aliceblue;
+  font-size: 28px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.navbar {
+  background: linear-gradient(to bottom, #1a9c29, #2bc64a);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #1b5e20;
+  color: white;
+  border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* ======== Estilização da Navbar e Footer ========= */
+/* --- Placeholder da navegação e rodapé --- */
+/* .navbar, .footer {
+    background-color: #333;
+    width: 100%;
+    height: 60px;
+}  */
+
+
+/* ======== Estilização da Main =========*/
+main {
+    padding: 0;
+    background: #ebe8c9;
+}
+
+/* --- Seção História --- */
+.section-historia {
+    padding: 30px 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.section-historia h2{
+    color: #096e46;
+    font-size: 36px;
+    margin: 0px 0px;
+    border-bottom: 2px solid #096e46;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.rodape-alto {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #1a9c29, #2bc64a);
+  height: 40px;
+  padding: 5px;
+}
+
+.rodape-alto ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.rodape-alto ul a {
+  color: black;
+  text-decoration: none;
+}
+
+.rodape-alto ul a:hover {
+  text-decoration: underline;
+}
+
+.rodape-baixo {
+  background-color: #13704b;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 992px) {
+    .section-historia {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .img-grupo {
+        max-width: 500px;
+    }
+}
+
+.section-historia-texto {
+    text-align: justify;
+    color: #096e46;
+    font-size: 20px;
+    flex: 1;
+}
+
+.section-historia-imagem {
+    flex: 1;
+}
+
+.section-historia-imagem .img-grupo {
+    margin: 20px auto;
+    height: auto;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 992px) {
+    .img-grupo {
+        max-width: 500px;
+    }
+}
+
+/* --- Seção Equipe --- */
+.section-equipe {
+    background-color: #096e46;
+    padding: 30px 0;
+    border-radius: 30px 30px 0 0;
+}
+
+.section-equipe h2{
+    color: white;
+    font-size: 36px;
+    margin: 0 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/* Estilização do Carrossel */
+.carousel-container {
+    position: relative;
+    margin: 0 0;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px;
+}
+
+.carousel-slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 4px solid #faf0e6;
+    background-color: white;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.carousel-slide h3 {
+    margin: 10px 0 5px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.carousel-slide p {
+    margin: 0 auto;
+    max-width: 85%;
+    text-align: center;
+    color: #DDD;
+}
+
+.funcao-titulo {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.funcao-descricao {
+    font-size: 1rem;
+}
+
+/* Botões de Navegação */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #39d071;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    z-index: 100;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #1a9c59;
+}
