@@ -183,24 +183,29 @@ button:hover{
     height: 100px;
   }
 
-  .navbar {
+   .navbar{
     flex-direction: column;
     height: auto;
     padding: 10px;
+  } 
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  #floresta{
-  height: auto;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 100%;
+   #floresta{
+    height: auto;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
   }
 
   #voluntarios{
-  height: auto;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .descricao p {
@@ -213,7 +218,7 @@ button:hover{
     margin: 20px auto;
   }
 
-  .historias {
+   .historias {
     flex-direction: column;
     align-items: center;
     gap: 20px;
