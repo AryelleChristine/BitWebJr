@@ -183,7 +183,7 @@ button:hover{
     height: 100px;
   }
 
-  .menu {
+  .navbar {
     flex-direction: column;
     height: auto;
     padding: 10px;
@@ -219,12 +219,10 @@ button:hover{
     gap: 20px;
   }
 
-  .rodape-alto {
+  .rodape-alto ul {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
-    height: auto;
-    padding: 10px;
+    align-items: center;
   }
 
   .rodape-baixo p {
