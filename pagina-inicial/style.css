@@ -126,6 +126,13 @@ button:hover{
   border-radius: 5px;
 }
 
+.imagens{
+  height: 30px;
+  width: 30px;
+  border-radius: 65px;
+  margin: 18px;
+}
+
 .rodape-alto {
   display: flex;
   justify-content: center;
