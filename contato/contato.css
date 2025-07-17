@@ -100,6 +100,7 @@ html, body {
 }
 
 .formulario-contato{
+  color: #1a9c29;
   display: flex;
   justify-content: center;
   text-align: center;
