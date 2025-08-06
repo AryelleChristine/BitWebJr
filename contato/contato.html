@@ -28,15 +28,19 @@
 
         <section>
             <div class="formulario-contato">
-                <form action ="/processar_formulario" method="post">
+                <form action ="/processar_formulario.php" method="POST">
                     <p>FALE CONOSCO</p>
-                
+                    <p>Acompanhe nossas ações e compartilhe nossa causa!</p>
+                    <label for="nome"></label>
                     <input type="text" placeholder="Nome" id="nome" name="nome"><br><br>
 
+                    <label for="email"></label>
                     <input type="email" placeholder="Email" id="email" name="email"><br><br>
 
-                    <input type="text" placeholder="Assunto" id="assunto" name="assunto"><br><br>
+                    <!-- <label for="assunto"></label>
+                    <input type="text" placeholder="Assunto" id="assunto" name="assunto"><br><br> -->
 
+                    <label for="mensagem"></label>
                     <textarea type="text" placeholder="Mensagem" id="mensagem" name="mensagem"></textarea><br><br>
 
                     <input type="submit" value="Enviar" id="botao-enviar"><br><br>
