@@ -1,3 +1,15 @@
+//Navbar mobile
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show-menu');
+        const isExpanded = navMenu.classList.contains('show-menu');
+        navToggle.setAttribute('aria-expanded', isExpanded);
+    });
+}
+
 //Carrossel
 document.addEventListener('DOMContentLoaded', () => {
     const slidesContainer = document.querySelector('.carousel-slides');
