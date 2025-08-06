@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: auto;
+  overflow-x: hidden;
 }
 
 .titulo {
@@ -104,7 +105,7 @@ html, body {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 190px;
+  margin: 150px;
 }
 
 .formulario-contato input{
@@ -156,6 +157,14 @@ html, body {
   .navbar ul {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .formulario-contato input{
+    width: 70%;
+  }
+
+  #mensagem{
+    width: 70%;
   }
 
   .rodape-alto ul {
