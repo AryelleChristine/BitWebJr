@@ -1,0 +1,170 @@
+/* ========== Estilização da Main ==========*/
+main {
+    padding: 0;
+    background: aliceblue;
+}
+
+/* --- Seção História --- */
+.main-historia {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    gap: 30px;
+}
+.main-historia h2{
+    color: #096e46;
+    font-size: 36px;
+    margin: 0px 0px;
+    border-bottom: 2px solid #096e46;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .main-historia {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.main-historia-texto {
+    text-align: justify;
+    color: #096e46;
+    font-size: 20px;
+    flex: 1;
+}
+
+.main-historia-imagem {
+    flex: 1;
+}
+
+.main-historia-imagem .img-grupo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 576px) {
+    .img-grupo {
+        max-width: 500px;
+    }
+    .main-historia-imagem {
+        margin: 0;
+    }
+}
+
+/* --- Seção Equipe --- */
+.main-equipe {
+    background-color: #ebe8c9;
+    padding: 30px 20px;
+    border-radius: 30px 30px 0 0;
+}
+
+.main-equipe h2{
+    color: #096e46;
+    font-size: 36px;
+    margin: 0;
+    border-bottom: 2px solid #096e46;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+@media (min-width: 600px) {
+    .main-equipe {
+        padding: 30px 60px;
+    }
+}
+
+/* Estilização do Carrossel */
+.carousel-container {
+    position: relative;
+    margin: 0 0;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px;
+}
+
+.carousel-slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 4px solid #096e46;
+    background-color: #096e46;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.carousel-slide h3 {
+    margin: 10px 0 5px;
+    font-size: 1.8rem;
+    color: #096e46;
+}
+
+.carousel-slide p {
+    margin: 3px auto;
+    max-width: 85%;
+    text-align: center;
+    color: #096e46;
+}
+
+.funcao-titulo {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.funcao-descricao {
+    font-size: 1rem;
+}
+
+/* Botões de Navegação */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #39d071;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    z-index: 100;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: 0.5s ease;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #1a9c59;
+}

@@ -1,0 +1,69 @@
+/* ========== Estilização da Main ==========*/
+#floresta{
+  height: 500px;
+  border-radius: 5px;
+  width: 1100px;
+}
+
+.descricao{
+  position: relative;
+  text-align: center;
+}
+
+.descricao p{
+  color: #096e46;
+  font-size: 20px;
+  text-align: center;
+  margin: 50px;
+}
+
+section button{
+  border-radius: 20px;
+  background-color: #1a9c29;
+  border: none;
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.botao-projetos{
+  position: absolute;
+  top: 450px;
+  right: 250px;
+}
+
+.botao-leia{
+  position: relative;
+  left: 100px;
+}
+
+section button a{
+  color: white;
+  text-decoration: none;
+}
+
+section button:hover{
+  background-color: rgb(68, 160, 79);
+  cursor: pointer;
+}
+
+.historias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  margin: 20px;
+  color: #096e46;
+}
+
+#voluntarios{
+  border-radius: 5px;
+}
+
+.imagens{
+  height: 35px;
+  width: 35px;
+  border-radius: 65px;
+  margin: 16px;
+}
