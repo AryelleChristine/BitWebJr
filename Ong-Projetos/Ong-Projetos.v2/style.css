@@ -3,36 +3,11 @@ html, body {
   background-color: rgb(240, 239, 239);
   margin: 0;
   padding: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  height: auto;
 }
 
 
-/* Header */
-.titulo {
-  display: flex;
-  align-items: center;
-  background-color: #13704b;
-  height: 100px;
-  padding: 0 20px;
-  gap: 20px;
-}
-
-.titulo h1 {
-  color: aliceblue;
-  font-size: 28px;
-}
-
-.logo {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Navbar */
+/* ========== Estilização Navbar ========== */
 .navbar {
     background-color: #13704b;
     height: 80px;
@@ -113,7 +88,7 @@ html, body {
 
 .navbar-items .btn-donate:hover {
     color: aliceblue;
-    background-color: #bbb;
+    background-color: #aa7319;
     transform: translateY(-2px);
 }
 
@@ -126,6 +101,73 @@ html, body {
     cursor: pointer;
 }
 
+/* Responsividade navbar */
+@media (max-width: 1176px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-items {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #13704b;
+        
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .navbar-items.show-menu {
+        max-height: 350px;
+    }
+
+    .navbar-items ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+
+    .navbar-items li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-items .mobile-alt-color {
+        background-color: #1a9c59;
+    }
+    
+    .navbar-items a {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .navbar-items .btn-donate{
+        padding: 10px 0;
+        width: 100%;
+        background-color: #F9A825;
+        border-radius: 0;
+        transform: translateY(2px);
+    }
+
+
+    .navbar-items a:hover {
+        background-color: #1a9c59;
+    }
+
+    .navbar-items li:not(:last-child):not(:nth-last-child(2))::after {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 30px;
+    }
+}
 
 /* Projetos */
 .carousel-container {
@@ -137,7 +179,7 @@ html, body {
 }
 
 .projetos-container {
-    padding: 40px 20px;
+    padding: 40px 0px;
     background-color: #f9f9f9;
      flex: 1;
 }
@@ -252,12 +294,12 @@ html, body {
     transform: scale(1.2);
 }
 
-/* Footer */
+/* ========== Estilização Rodapé ========== */
 .footer {
     background-color: #13704b;
     width: 100%;
     color: white;
-    border-top: auto solid #064638;
+    border-top: 5px  solid #064638;
     box-sizing: border-box;
 }
 
@@ -287,8 +329,16 @@ html, body {
     transition: 0.5s ease;
 }
 
-.footer-social-links a:hover i {
-    color: #F9A825;
+.footer-social-links a:hover .fa-instagram {
+    color: #833AB4;
+}
+
+.footer-social-links a:hover .fa-facebook-f {
+    color: #1877F2;
+}
+
+.footer-social-links a:hover .fa-tiktok {
+    color: #FE2C55;
 }
 
 .footer-logo {
@@ -375,7 +425,7 @@ html, body {
 
 .btn-donate-footer:hover {
     color: aliceblue;
-    background-color: #bbb;
+    background-color: #aa7319;
 }
 
 .footer-copyright {
@@ -389,95 +439,9 @@ html, body {
     margin: 0;
 }
 
-
-@media (max-width: 1176px) {
-    .navbar-toggle {
-        display: block;
-    }
-
-  .navbar-items {
-    position: fixed; 
-    top: 80px;
-    left: 0;
-    right: 0;
-    background-color: #13704b;
-    max-height: calc(100vh - 80px); 
-    overflow-y: auto; 
-    display: none; 
-  }
-
-    .navbar-items.show-menu {
-        max-height: 350px;
-    }
-
-    .navbar-items ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        width: 100%;
-    }
-
-    .navbar-items li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar-items .mobile-alt-color {
-        background-color: #1a9c59;
-    }
-    
-    .navbar-items a {
-        padding: 10px 0;
-        width: 100%;
-    }
-
-    .navbar-items .btn-donate{
-        padding: 10px 0;
-        width: 100%;
-        background-color: #F9A825;
-        border-radius: 0;
-        transform: translateY(2px);
-    }
-
-
-    .navbar-items a:hover {
-        background-color: #1a9c59;
-    }
-
-    .navbar-items li:not(:last-child):not(:nth-last-child(2))::after {
-        display: none; 
-    }
-}
-
-
+/* Responsividade rodapé */
 @media (max-width: 768px) {
-  .carousel-container {
-    padding: 20px 15px; 
-  }
-  
-  .footer-social, .footer-main {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .footer-column {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 0 15px;
-    height: 70px;
-  }
-  
-  .navbar-title h1 {
-    font-size: 22px;
-  }
-  
-  .carousel-btn {
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
-  }
+    .footer-main {
+        flex-direction: column;
+    }
 }
