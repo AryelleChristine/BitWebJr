@@ -20,6 +20,12 @@
   margin: 50px;
 }
 
+.titulo-historias {
+  color: #096e46;
+  font-size: 36px;
+  text-align: center;
+}
+
 section button{
   border-radius: 20px;
   background-color: #1a9c29;
@@ -35,9 +41,26 @@ section button{
   right: 250px;
 }
 
+@media (max-width: 1176px) {
+    .botao-projetos {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+}
+
 .botao-leia{
   position: relative;
-  left: 100px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 1474px) {
+    .botao-leia {
+        text-align: center;
+        transform: translateX(-150px);
+    }
 }
 
 section button a{
