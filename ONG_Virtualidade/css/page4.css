@@ -1,0 +1,355 @@
+img {
+    width: 100%;
+    height: 500px;
+    top: 124px;
+}
+
+h2{
+    font-size: 48px;
+    font-style: bold;
+    color: #353578;
+    letter-spacing: -1%;
+}
+
+h5{
+    font-size: 20px;
+}
+
+.principal{
+    text-align: justify;
+    margin: 220px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  font-family: Arial, sans-serif;
+  background-color: rgb(240, 239, 239);
+}
+
+/*NAVBAR*/
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 60px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.navbar-logo {
+    height: 60px;
+    object-fit: cover;
+    transform: translateY(3px);
+}
+
+.navbar-items ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-items a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 400;
+    color: #4B4B4B;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.navbar-items a:hover {
+    color: #FF8310;
+    transform: translateY(-2px);
+}
+
+.navbar-items li {
+    position: relative;
+}
+
+.navbar-items li:not(:last-child):not(:nth-last-child(2))::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 1px;
+    height: 30px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-items .btn-donate {
+    display: flex;
+    padding: 15px 25px;
+    color: white;
+    font-weight: 700;
+    background-color: #FF8310;
+    border-radius: 10px;
+    border: #C4730A solid 1px;
+}
+
+.navbar-items .btn-donate:hover {
+    color: aliceblue;
+    background-color: #C4730A;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    color: #4B4B4B;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-toggle i {
+    transition: 0.3s ease;
+}
+
+.navbar-toggle[aria-expanded="true"] i {
+    transform: rotate(90deg);
+}
+
+/*FOOTER*/
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #353578;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo {
+    height: 50px;
+    object-fit: contain;
+}
+
+.footer-right-group {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-social-icons a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #FF8310;
+    transform: translateY(-2px);
+}
+
+.footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-nav li {
+    margin-bottom: 12px;
+}
+
+.footer-nav li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-nav a {
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #FF8310;
+    transform: translateY(-2px);
+}
+
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: #5E5E5E;
+    width: 100%;
+    margin: 40px 0;
+    padding: 0;
+    display: block;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    font-size: 0.875rem;
+    color: #DDDDDD;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-legal a {
+    display: inline-block;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+    color: #F3F3F3;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: #FF8310;
+    text-decoration: underline;
+}
+
+.footer-copyright p {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+    color: #F3F3F3;
+    margin: 0;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 964px) {
+    /* --- Navbar --- */
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-items {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+        transition: max-height 0.4s ease-in-out;
+        box-shadow: 0 56px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .navbar-items.show-menu {
+        max-height: 350px;
+    }
+
+    .navbar-items ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+
+    .navbar-items li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-items .mobile-alt-color {
+        background-color: #ffffff;
+    }
+    
+    .navbar-items a {
+        padding: 10px 0;
+        width: 100%;
+        color: #4B4B4B;
+    }
+
+    .navbar-items .btn-donate {
+        width: 100%;
+        padding: 10px 0;
+        justify-content: center;
+        transform: translateY(2px);
+        background-color: #FF8310;
+        border-radius: 0;
+        color: white;
+    }
+
+    .navbar-items a:hover {
+        background-color: #f2f2f2;
+        transform: none;
+    }
+
+    .navbar-items .btn-donate:hover {
+        background-color: #C4730A;
+    }
+
+    .navbar-items li:not(:last-child):not(:nth-last-child(2))::after {
+        display: none; 
+    }
+}
+
+@media (max-width: 764px) {
+    /* --- Navbar --- */
+    .navbar {
+        padding: 0 20px;
+    }
+
+    /* --- Rodapé --- */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-legal {
+        justify-content: center;
+        gap: 20px;
+    }
+}
