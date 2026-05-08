@@ -1,0 +1,111 @@
+/*Pesquisas 2*/
+.pesquisas-section {
+    background-color: #ffffff; 
+    padding: 40px 0;
+    min-height: calc(100vh - 100px); 
+}
+
+.pesquisas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-bottom: 80px;
+}
+
+.pesquisas-titles {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+
+.section-subtitle {
+    color: #FF8310;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.pesquisas-top {
+    margin-top: 40px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.pesquisas-imagem {
+    width: 45%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.pesquisas-texto-top {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisas-titulo {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.pesquisas-section p {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #555555;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+.pesquisas-bottom {
+    width: 100%;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 964px) {
+    .pesquisas-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .pesquisas-imagem,
+    .pesquisas-texto-top {
+        width: 100%;
+    }
+
+    .pesquisas-imagem {
+        max-width: 600px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 764px) {
+    .pesquisas-section {
+        padding: 40px 0;
+    }
+
+    .pesquisas-container {
+        padding: 0 20px;
+    }
+
+    .pesquisas-titulo {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .pesquisas-section p {
+        font-size: 16px;
+    }
+}

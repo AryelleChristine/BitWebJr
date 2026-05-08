@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const originalCards = Array.from(track.querySelectorAll('.project-card'));
+    const originalCards = Array.from(track.querySelectorAll('.carousel-card'));
     const totalOriginalItems = originalCards.length;
 
     let itemsToShow = window.innerWidth <= 768 ? 1 : 2;
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isTransitioning = false;
 
     const getSlideAmount = () => {
-        const firstCard = track.querySelector('.project-card');
+        const firstCard = track.querySelector('.carousel-card');
         if (!firstCard) return 0;
 
         const cardWidth = firstCard.offsetWidth;
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         track.innerHTML = '';
         originalCards.forEach(card => track.appendChild(card.cloneNode(true)));
 
-        const currentCards = track.querySelectorAll('.project-card');
+        const currentCards = track.querySelectorAll('.carousel-card');
 
         for (let i = 0; i < itemsToShow; i++) {
             const clone = currentCards[totalOriginalItems - 1 - i].cloneNode(true);
