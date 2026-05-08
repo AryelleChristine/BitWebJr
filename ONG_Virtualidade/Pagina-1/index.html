@@ -3,104 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seções do Site</title>
+    <title>ONG Virtualidade - Participe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body> 
+<body>
 
-     <div class="main-wrapper">
-<div class="navbar">
-    <div class="navbar-title">
-        <a href="index.html"><img src="logo.png" alt="Logo da ONG Virtualidade" class="navbar-logo"></a>
+<div class="main-wrapper">
+    <div class="navbar">
+        <div class="navbar-title">
+            <a href="index.html"><img src="logo.png" alt="Logo da ONG Virtualidade" class="navbar-logo"></a>
+        </div>
+        <nav class="navbar-items" id="nav-menu">
+            <ul>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Download App</a></li>
+                <li><a href="#" class="btn-donate">Contact us</a></li>
+            </ul>
+        </nav>
+        <button class="navbar-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
-    <nav class="navbar-items" id="nav-menu">
-        <ul class="">
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Download App</a></li>
-            <li><a href="#" class="btn-donate">Contact us</a></li>
-        </ul>
-    </nav>
-    <button class="navbar-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
-        <i class="fas fa-bars"></i>
-    </button>
-</div>
 
     <main>
+        <!-- BANNER CTA com círculo decorativo, imagem, título e botão -->
         <section class="cta-banner">
-            <div class="cta-overlay"></div> 
-            <div class="cta-content">
-                <h1>Participe de nossas ações e ajude a fazer a diferença</h1>
-                <button class="btn-primary" type="submit">Inscreva-se</button>
-            </div>
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+
+            <h2>Participe de nossas ações e ajude a fazer a diferença</h2>
+            <button class="btn-primary" type="button">Inscreva-se</button>
+        </div>
         </section>
 
-
+        <!-- SEÇÃO DE CARDS -->
         <section class="cards-section">
-            
             <div class="card">
-                <div class="box"></div>
-                <h2>Conservação</h2>
-                <p>
-                    Sua contribuição ajuda a financiar projetos de conservação
-                </p>
-                <button class="btn-primary" type="submit">Inscreva-se</button>
+                <div class="box">
+                    <img src="image.png" class="card-image" alt="Doação">
+                </div>
+                <h2>Doação</h2>
+                <p>Sua contribuição ajuda a financiar projetos de conservação</p>
+                <button class="btn-primary" type="button">Inscreva-se</button>
             </div>
 
-            <div class="card">                
-                <div class="box"></div>
+            <div class="card">
+                <div class="box">
+                    <img src="image1.png" class="card-image" alt="Colaboradores">
+                </div>
                 <h2>Colaboradores</h2>
-                <p>
-                    Empresas podem colaborar com nossos projetos e aumentar seu impacto ambiental
-                </p>
-                <button class="btn-primary" type="submit">Inscreva-se</button>
+                <p>Empresas podem colaborar com nossos projetos e aumentar seu impacto ambiental</p>
+                <button class="btn-primary" type="button">Inscreva-se</button>
             </div>
         </section>
     </main>
-<footer class="footer">
-    <div class="footer-container">
-        
-        <div class="footer-top">
-          <a href="index.html" class="footer-logo-link">
-              <img src="logo-footer.png" alt="Logo Virtualidade" class="footer-logo">
-          </a>
 
-          <div class="footer-right-group">
-          <div class="footer-social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          </div>
-  
-          <nav class="footer-nav">
-              <ul>
-                  <li><a href="#">Clients</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Download App</a></li>
-              </ul>
-          </nav>
-          
-        <hr class="footer-divider">
-
-        <div class="footer-bottom">
-            <div class="footer-legal">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookies Settings</a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="logo-footer.png" alt="Logo Virtualidade" class="footer-logo">
+                </a>
+                <div class="footer-right-group">
+                    <div class="footer-social-icons">
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Download App</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="footer-copyright">
-                <p>Copyright © 2025. Virtualidades by iaapta.agency</p>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Copyright © 2025. Virtualidade by iaapta.agency</p>
+                </div>
             </div>
         </div>
+    </footer>
+</div>
 
-    </div>
-        </div>
-</footer>
 
 </body>
-</div>
 </html>
