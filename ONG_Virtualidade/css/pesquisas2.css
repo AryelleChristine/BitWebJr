@@ -73,6 +73,12 @@
 }
 
 /*RESPONSIVIDADE*/
+@media (max-width: 1200px) {
+    .pesquisas-titles {
+        padding: 0 50px;
+    }
+}
+
 @media (max-width: 964px) {
     .pesquisas-top {
         flex-direction: column;
@@ -92,6 +98,14 @@
 }
 
 @media (max-width: 764px) {
+    .pesquisas-titles {
+        padding: 0 20px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+    }
+
     .pesquisas-section {
         padding: 40px 0;
     }
