@@ -12,8 +12,25 @@ h2{
 }
 
 h5{
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Open-Sans', sans-serif;
 }
+
+.depoimentos{
+    background-color: #FF8310;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+  }
 
 .principal{
     text-align: justify;
